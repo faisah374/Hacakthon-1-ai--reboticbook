@@ -1,0 +1,6 @@
+{
+  "FEATURE_SPEC": "specs/1-ai-humanoid-book/spec.md",
+  "IMPL_PLAN": "specs/1-ai-humanoid-book/plan.md",
+  "SPECS_DIR": "specs",
+  "BRANCH": "1-ai-humanoid-book"
+}
