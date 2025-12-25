@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://panaversity.github.io', // Replace with your GitHub username
+  url: 'https://github.com/faisah374/1-ai-k12-efficiency/edit/main/', // Replace with your GitHub username
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/ai-book/', // This should match your repository name
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'panaversity', // Usually your GitHub org/user name.
-  projectName: 'ai-book', // Usually your repo name.
+  organizationName: 'faisah374', // Usually your GitHub org/user name.
+  projectName: '1-ai-k12-efficiency', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/panaversity/ai-book/edit/main/my-website/',
+            'https://github.com/faisah374/1-ai-k12-efficiency/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
@@ -57,7 +57,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/panaversity/ai-book/edit/main/my-website/',
+            'https://github.com/faisah374/1-ai-k12-efficiency/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -91,7 +91,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/panaversity/ai-book',
+          href: 'https://github.com/faisah374/1-ai-k12-efficiency',
           label: 'GitHub',
           position: 'right',
         },
