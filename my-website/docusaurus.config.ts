@@ -1,35 +1,30 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// This runs in Node.js - Don't use client-side code here
 
 const config: Config = {
   title: 'AI/Spec-Driven Book on Physical AI & Humanoid Robotics',
   tagline: 'Understanding the system architecture of modern humanoid robotics',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://physicalhumanoidaitextbook.vercel.app', // Replace with your GitHub username
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/', // This should match your repository name
+  // ✅ Vercel production URL
+  url: 'https://physicalhumanoidaitextbook.vercel.app',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'faisah374', // Usually your GitHub org/user name.
-  projectName: 'ai-book', // Usually your repo name.
+  // ✅ MUST be root for Vercel
+  baseUrl: '/',
+
+  // ❌ Removed GitHub Pages config (causes 404 on Vercel)
+  // organizationName
+  // projectName
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -41,27 +36,13 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
+          // ❌ editUrl removed
         },
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          // ❌ editUrl removed
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -71,11 +52,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+
     colorMode: {
       respectPrefersColorScheme: true,
     },
+
     navbar: {
       title: 'AI/Spec-Driven Book on Physical AI & Humanoid Robotics',
       logo: {
@@ -89,7 +71,7 @@ const config: Config = {
           position: 'left',
           label: 'Book Content',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/faisah374',
           label: 'GitHub',
@@ -97,6 +79,7 @@ const config: Config = {
         },
       ],
     },
+
     footer: {
       style: 'dark',
       links: [
@@ -140,8 +123,10 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} AI/Spec-Driven Humanoid Robotics Book. Built with Docusaurus.`,
+      copyright:
+        `Copyright © ${new Date().getFullYear()} AI/Spec-Driven Humanoid Robotics Book. Built with Docusaurus.`,
     },
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
@@ -150,3 +135,4 @@ const config: Config = {
 };
 
 export default config;
+
