@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://github.com/faisah374/1-ai-k12-efficiency/edit/main/', // Replace with your GitHub username
+  url: 'https://physicalhumanoidaitextbook.vercel.app', // Replace with your GitHub username
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ai-book/', // This should match your repository name
+  baseUrl: '/', // This should match your repository name
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'faisah374', // Usually your GitHub org/user name.
-  projectName: '1-ai-k12-efficiency', // Usually your repo name.
+  projectName: 'ai-book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/faisah374/1-ai-k12-efficiency/edit/main/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
@@ -57,7 +57,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/faisah374/1-ai-k12-efficiency/edit/main/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -91,7 +91,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/faisah374/1-ai-k12-efficiency',
+          href: 'https://github.com/faisah374',
           label: 'GitHub',
           position: 'right',
         },
@@ -114,7 +114,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Repository',
-              href: 'https://github.com/panaversity/ai-book',
+              href: 'https://github.com/faisah374',
             },
             {
               label: 'Docusaurus Community',
@@ -135,7 +135,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/panaversity/ai-book',
+              href: 'https://github.com/faisah374',
             },
           ],
         },
